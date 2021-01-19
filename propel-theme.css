@@ -1,0 +1,121 @@
+*{
+    margin:0px;
+    padding:0px;
+
+}
+
+
+#logo{
+    grid-area:logo;
+    background-image: url(https://uploads-ssl.webflow.com/5b680680f109cf5a2fd941ab/5b680f7ddc6fa8394a12fc7f_logo-spoon-white.svg);
+    background-repeat: no-repeat;
+    height:30px;
+    width:140px;
+}
+
+#nav{
+   grid-area:nav;
+  
+    background-image: url(hamburger.png);
+    background-repeat: no-repeat;
+    height:30px;
+    width:30px;
+}
+#banner-text{
+    grid-area:banner-text;
+    
+    color:white;
+    font-weight: bold;
+    font-size: 450%;
+
+}
+#banner-text-text{
+    grid-area:banner-text-text;
+    
+    color:white;
+    font-size:110%;
+}
+#get-started{
+    grid-area:get-started;
+    background-color: green;
+    color:white;
+    font-size:150%;
+    text-align: center;
+    padding:20px 0px 0px 0px;
+    width:150px;
+    height:60px;
+    
+}
+
+@media only screen and (max-width:530px){
+
+#top-banner-wrapper{
+    display:grid;
+    position:absolute;
+    z-index:10;
+    grid-template-rows: 20px 50px 50px 150px 150px 50px 50px 50px 100px;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+       
+        grid-template-areas:
+        ". . . . . ." 
+        "logo . . . nav ."
+        ". . . . . ."
+        ". banner-text banner-text . . ."
+        ". banner-text banner-text . . ."
+       ". . . . . ."
+        ". banner-text-text banner-text-text banner-text-text . ."
+        ". . . . . ."
+        ". . get-started . . .";
+    
+}
+
+}
+
+@media (min-width:530px) and (max-width:800px){
+    #top-banner-wrapper{
+        display:grid;
+        position:absolute;
+        z-index:10;
+        grid-template-rows:20px 50px 50px 150px 150px 50px 50px 50px 100px;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+       
+        grid-template-areas:
+        ". . . . . . . ." 
+        "logo . . . nav . . ."
+        ". . . . . . . ."
+        ". . banner-text banner-text banner-text . . ."
+        ". . banner-text banner-text banner-text . . ."
+       ". . . . . . . ."
+        ". banner-text-text banner-text-text banner-text-text . . . ."
+        ". . . . . . . ."
+        ". . . get-started . . . .";
+    
+    }
+
+
+
+}
+@media (min-width:800px){
+    #top-banner-wrapper{
+        display:grid;
+        position:absolute;
+        z-index:10;
+        grid-template-rows:20px 50px 50px 150px 150px 50px 50px 50px 100px;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+       
+        grid-template-areas: 
+        ". . . . . . . ."
+        "logo . . . nav . . ."
+        ". . . . . . . ."
+        ". banner-text banner-text banner-text . . . ."
+        ". banner-text banner-text banner-text . . . ."
+       ". . . . . . . ."
+        ". banner-text-text banner-text-text banner-text-text . . . ."
+        ". . . . . . . ."
+        ". . get-started . . . . .";
+    
+    }
+
+
+
+}
