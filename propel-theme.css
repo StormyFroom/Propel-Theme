@@ -3,8 +3,6 @@
     padding:0px;
 
 }
-
-
 #logo{
     grid-area:logo;
     background-image: url(https://uploads-ssl.webflow.com/5b680680f109cf5a2fd941ab/5b680f7ddc6fa8394a12fc7f_logo-spoon-white.svg);
@@ -14,24 +12,36 @@
 }
 
 #nav{
-   grid-area:nav;
-  
+   grid-area:nav;  
     background-image: url(hamburger.png);
     background-repeat: no-repeat;
     height:30px;
     width:30px;
 }
+#nav-dropdown{
+    width:100%;
+    height:400px;
+    margin-top:50px;
+    background-color:rgb(96, 233, 96);
+    color:white;
+    text-align: center;
+    position: absolute;
+    z-index:20;
+
+    display:none;
+}
+#nav-dropdown ul li{
+        margin:20px 0px 20px 0px;
+}
 #banner-text{
-    grid-area:banner-text;
-    
+    grid-area:banner-text;    
     color:white;
     font-weight: bold;
     font-size: 450%;
 
 }
 #banner-text-text{
-    grid-area:banner-text-text;
-    
+    grid-area:banner-text-text;    
     color:white;
     font-size:110%;
 }
@@ -46,6 +56,32 @@
     height:60px;
     
 }
+/******************* Start Of Articles *********/
+#article-text1{
+    grid-area:article-text1;
+    font-size: 150%;
+    margin-bottom: 60px;
+}
+.articles{
+    padding:25px;
+    background-color:rgb(229, 234, 238);
+}
+#article1{
+    grid-area:article1;
+}
+#article2{
+    grid-area:article2;
+}
+#article3{
+    grid-area:article3;
+}
+
+#footer{
+    width:100%;
+    height:200px;
+    background-color: rgb(10, 10, 29);
+}
+
 
 @media only screen and (max-width:530px){
 
@@ -67,6 +103,20 @@
         ". . . . . ."
         ". . get-started . . .";
     
+}
+#article-wrapper{
+    display: grid;
+    
+    grid-template-rows:auto;
+    grid-template-columns:1fr;
+    grid-template-areas: 
+    "article-text1" 
+    "article-text1"
+    "article1" 
+    "article2" 
+    "article3"
+    ". ";
+
 }
 
 }
@@ -91,6 +141,17 @@
         ". . . get-started . . . .";
     
     }
+    #article-wrapper{
+        display: grid;
+        column-gap: 10px;
+        grid-template-rows:auto;
+        grid-template-columns:.5fr 1fr 1fr 1fr .5fr;
+        grid-template-areas: 
+        ". article-text1 article-text1 article-text1 ."
+        ". article1 article2 article3 ."
+        ". . . . .";
+
+    }
 
 
 
@@ -105,17 +166,27 @@
        
         grid-template-areas: 
         ". . . . . . . ."
-        "logo . . . nav . . ."
+        "logo . . . . nav . ."
         ". . . . . . . ."
-        ". banner-text banner-text banner-text . . . ."
-        ". banner-text banner-text banner-text . . . ."
+        ". . banner-text banner-text banner-text . . ."
+        ". . banner-text banner-text banner-text . . ."
        ". . . . . . . ."
-        ". banner-text-text banner-text-text banner-text-text . . . ."
+        ". banner-text-text banner-text-text banner-text-text banner-text-text . . ."
         ". . . . . . . ."
-        ". . get-started . . . . .";
+        ". . . get-started . . . .";
     
     }
+    #article-wrapper{
+        display: grid;
+        column-gap: 10px;
+        grid-template-rows:auto;
+        grid-template-columns:.5fr 1fr 1fr 1fr .5fr;
+        grid-template-areas: 
+        ". article-text1 article-text1 article-text1 ."
+        ". article1 article2 article3 ."
+        ". . . . .";
 
+    }
 
 
 }
