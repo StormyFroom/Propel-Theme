@@ -1,94 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="propel-theme.css" type="text/css">
-    <title>Propel Theme - Webflow.io</title>
-</head>
-<body>
-
- <div id="top-banner-wrapper"> 
-    <div id="logo">
-           
-    </div>
-    <div id="nav" onclick="navDropDown()">
-      
-    </div>
-    <div id="nav-dropdown">
-        <ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="propel-theme2.css" rel="stylesheet" type="text/css" />
+    <title>Propel Theme</title>
+  </head>
+  <body>
+    <div id="background-image-wrapper">
+      <div id="background-image-shadow">
+        <div id="logo">
+          <img
+            src="https://uploads-ssl.webflow.com/5b680680f109cf5a2fd941ab/5b680f7ddc6fa8394a12fc7f_logo-spoon-white.svg"
+            alt="logo"
+          />
+        </div>
+        <div id="top-nav">
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Premium</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Sign In</a></li>
+            <li id="get-started"><a href="#">Get Started</a></li>
+          </ul>
+        </div>
+        <div id="menu" onclick="navDropDown()">
+          <img src="./hamburger.png" alt="menu" />
+        </div>
+        <div id="nav-dropdown">
+          <ul>
             <li>Features</li>
             <li>Premium</li>
             <li>Pricing</li>
             <li>About</li>
             <li>Sign In</li>
             <li>Get Started</li>
+          </ul>
+        </div>
 
-        </ul>
+        <div id="banner-moto">
+          <h2>Propel your business.</h2>
+          <p>
+            Propel comes with everything you need to get your business rolling.
+          </p>
+          <h3>Get Started</h3>
+        </div>
+      </div>
     </div>
-          
-       <div id="banner-text">
-        Propel your<br>business.
+    <br />
+    <div id="article-wrapper">
+      <div id="article-text1">
+        <span> Promoting your business and services with Propel:</span>
+        A responsive, multi-page business template with everything you need
+        propel your business.
+      </div>
+
+      <div id="article1">
+        <div class="article-centering">
+          <img src="coffee-cup.png" alt="coffee cup" />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex
+            corrupti dolorem dicta esse, ipsa voluptates temporibus? Aliquam
+            nulla impedit hic! Atque ab, sequi aperiam distinctio voluptas
+            inventore error vero magni.
+          </p>
+        </div>
+      </div>
+      <div id="article2">
+        <div class="article-centering">
+          <img src="coffee-cup.png" alt="coffee cup" />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex
+            corrupti dolorem dicta esse, ipsa voluptates temporibus? Aliquam
+            nulla impedit hic! Atque ab, sequi aperiam distinctio voluptas
+            inventore error vero magni.
+          </p>
+        </div>
+      </div>
+      <div id="article3">
+        <div class="article-centering">
+          <img src="coffee-cup.png" alt="coffee cup" />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex
+            corrupti dolorem dicta esse, ipsa voluptates temporibus? Aliquam
+            nulla impedit hic! Atque ab, sequi aperiam distinctio voluptas
+            inventore error vero magni.
+          </p>
+        </div>
+      </div>
     </div>
-    <div id="banner-text-text">
-        <p>Propel comes with everything you need to get your business rolling.</p>
-    </div>
-    <div id="get-started">
-        Get Started
-    </div>
-</div>
-   <img src="https://images.pexels.com/photos/4506938/pexels-photo-4506938.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="business">
 
-   <br><br><br><br>
-<div id="article-wrapper">
-   <div id="article-text1">
-    <span style="font-weight:bold;">Promoting your business and services with Propel:</span> A responsive, multi-page business template with everything you need propel your business.
-   </div>
-   
-   <div id="article1" class="articles">
-       <img src="coffee-cup.png" alt="coffee cup">
-       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex corrupti dolorem dicta esse, ipsa voluptates temporibus? Aliquam nulla impedit hic! Atque ab, sequi aperiam distinctio voluptas inventore error vero magni.</p>
-   </div>
-   <div id="article2" class="articles">
-    <img src="coffee-cup.png" alt="coffee cup">
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex corrupti dolorem dicta esse, ipsa voluptates temporibus? Aliquam nulla impedit hic! Atque ab, sequi aperiam distinctio voluptas inventore error vero magni.</p>
-</div>
-<div id="article3" class="articles">
-    <img src="coffee-cup.png" alt="coffee cup">
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex corrupti dolorem dicta esse, ipsa voluptates temporibus? Aliquam nulla impedit hic! Atque ab, sequi aperiam distinctio voluptas inventore error vero magni.</p>
-</div>
-
-</div>
-<br><br><br>
-<footer>
-    <div id="footer">
-
-
-    </div>
-
-
-
-</footer>
-
-
-<script>
-    
-    function navDropDown() {
-   
-        
-        if(document.getElementById("nav-dropdown").style.display == "none"){
-
-            document.getElementById("nav-dropdown").style.display = "block";
-            
-        }else{
-            document.getElementById("nav-dropdown").style.display = "none";            
-
+    <div id="footer"></div>
+    <script>
+      function navDropDown() {
+        if (document.getElementById("nav-dropdown").style.display == "none") {
+          document.getElementById("nav-dropdown").style.display = "block";
+        } else {
+          document.getElementById("nav-dropdown").style.display = "none";
         }
-   }
-</script>
-
-
-
-
-</body>
+      }
+    </script>
+  </body>
 </html>
